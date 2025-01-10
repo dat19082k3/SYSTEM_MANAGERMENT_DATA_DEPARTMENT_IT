@@ -1,0 +1,31 @@
+@use "../../assets/scss/variables.scss";
+
+.listWrap {
+  @apply p-4 rounded-lg bg-white border border-gray-110 shadow-card-box h-[calc(100vh-105px)];
+  @media only screen and (max-width: 576px) {
+    @apply p-4;
+  }
+
+  .filterWrap {
+    .search {
+      @apply mb-3.5 w-[500px];
+
+      @media only screen and (max-width: 1200px) {
+        @apply w-[450px];
+      }
+
+      @media only screen and (max-width: 768px) {
+        @apply w-full;
+      }
+
+    }
+
+    @apply mb-2.5 flex justify-between;
+  }
+
+  .tableWrap {
+    @media only screen and (max-height: 988px) {
+      @apply h-[calc(100vh-222px)];
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@use "../../assets/scss/variables.scss";
+
+.listWrap {
+  @apply p-4 rounded-lg bg-white border border-gray-110 shadow-card-box h-[calc(100vh-105px)];
+  @media only screen and (max-width: 576px) {
+    @apply p-4;
+  }
+}
+
+.mainContent {
+  @apply flex-row space-y-4 mt-5 mb-14 px-80;
+
+
+  @media screen and (max-width: 1920px) {
+    @apply px-20;
+  }
+
+  @media screen and (max-width: 1440px) {
+    @apply px-10;
+  }
+
+  @media screen and (max-width: 576px) {
+    @apply p-4;
+  }
+}
+
+.btnWrap {
+  @apply flex justify-end space-x-4 px-80;
+
+  @media screen and (max-width: 1920px) {
+    @apply px-20;
+  }
+
+  @media screen and (max-width: 1440px) {
+    @apply px-10;
+  }
+
+  @media screen and (max-width: 576px) {
+    @apply p-4;
+  }
+}
